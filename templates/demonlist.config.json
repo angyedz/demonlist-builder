@@ -1,0 +1,46 @@
+{
+  "$schema": "./demonlist.config.schema",
+  "list": {
+    "name": "My Demonlist",
+    "archetype": "fullstack",
+    "database": "postgres",
+    "locales": ["en"]
+  },
+  "divisions": {
+    "enabled": true,
+    "ranges": {
+      "main": [1, 75],
+      "extended": [76, 150],
+      "advanced": [151, 300],
+      "unbounded": [301, null]
+    }
+  },
+  "scoring": {
+    "model": "mixed",
+    "curve": { "type": "exp", "max": 250, "k": 0.022, "floor": 0 },
+    "partialCredit": {
+      "enabled": true,
+      "appliesTo": ["main"],
+      "scale": { "type": "linear", "from": "requirement", "to": 100 }
+    },
+    "divisionMultipliers": {
+      "main": 1.0,
+      "extended": 1.0,
+      "advanced": 0.5,
+      "unbounded": 0.0
+    },
+    "packs": { "enabled": true }
+  },
+  "requirements": { "default": 100, "perLevelOverride": true },
+  "submission": {
+    "open": true,
+    "rawFootageAboveProgress": 60,
+    "requireDevice": true,
+    "sink": "db"
+  },
+  "moderation": {
+    "roles": ["member", "helper", "moderator", "admin"],
+    "auditLog": true,
+    "skipTypes": ["I", "II", "III"]
+  }
+}

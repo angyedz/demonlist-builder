@@ -1,0 +1,21 @@
+{
+  "name": "Acheron",
+  "id_ingame": 78510536,
+  "publisher": "Ryamu",
+  "verifier": "Zoink",
+  "video_url": "https://www.youtube.com/watch?v=example",
+  "requirement": 100,
+  "list_division": "main",
+  "records": [
+    {
+      "player": "Zoink",
+      "progress": 100,
+      "video_url": "https://www.youtube.com/watch?v=verify"
+    },
+    {
+      "player": "Trick",
+      "progress": 67,
+      "video_url": "https://www.youtube.com/watch?v=trick67"
+    }
+  ]
+}
