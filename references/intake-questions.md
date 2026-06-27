@@ -5,6 +5,15 @@ many questions as needed, in small batches, and keep asking follow-ups until
 there is zero ambiguity. It is always better to ask one more question than to
 guess. Restate your understanding and get explicit confirmation before building.
 
+## LANGUAGE RULE (strict)
+
+Ask EVERY question, write EVERY summary, and give EVERY explanation in the SAME
+language the user is writing to you in. Detect the user's language from their
+messages and mirror it exactly. If they switch languages, switch with them. Do
+NOT default to English. Keep code identifiers/keywords in English, but all
+human-facing prose (questions, options, confirmations) must be in the user's
+language.
+
 ## How to run discovery
 
 1. Ask in small, focused batches (3-6 questions), grouped by topic below.
@@ -69,6 +78,11 @@ guess. Restate your understanding and get explicit confirmation before building.
 - Design/brand constraints, theming, dark mode, multilingual?
 - Pages needed: list, level detail, leaderboard, packs, roulette, submit, admin?
 - Mobile priority? Accessibility requirements?
+
+> This is only the high-level pass. Before generating ANY frontend you MUST run
+> the full, surface-by-surface questionnaire in `references/frontend-questions.md`
+> and complete the Design phase described in `references/design-system.md`. Do
+> not scaffold a frontend from these three questions alone.
 
 ## 9. Delivery & ops
 
