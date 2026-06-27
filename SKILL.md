@@ -28,12 +28,18 @@ that match the user's needs, then generate a working project.
   pass using `references/intake-questions.md`, asking as many questions as
   needed, in small batches, with follow-ups, until there is zero ambiguity.
   Restate a written spec and get explicit confirmation before building.
-- **Design is not optional.** Default AI output looks generic and "AI-made".
-  Before generating any frontend, run the Design phase: the full questionnaire
-  in `references/frontend-questions.md` and the process in
-  `references/design-system.md` (which wires in the embedded taste-skill and
-  ui-ux-pro-max design skills under `references/design/`). No frontend may be
-  generated until the design is decided with the user.
+- **Design is not optional, and you MUST follow the design skills.** Default AI
+  output looks generic and "AI-made" — that is a failure. Before generating any
+  frontend you MUST run the Design phase in `references/design-system.md`: read
+  the embedded design skills under `references/design/taste-suite/`, pick ONE
+  style skill WITH the user (`industrial-brutalist-ui`, `high-end-visual-design`,
+  or `minimalist-ui`), read that skill's SKILL.md in full, run the complete
+  questionnaire in `references/frontend-questions.md`, write a project
+  `DESIGN.md`, build to it, and pass the anti-slop self-audit. Always apply the
+  core `taste-skill` anti-AI-tells rules and the `output-skill` no-truncation
+  rule. Use `ui-ux-pro-max` for concrete patterns/palettes and `brandkit` for
+  logo/identity. No frontend may be generated until the design is locked with
+  the user. If the result looks AI-made, you violated a skill — go fix it.
 - **Offer the full feature set.** Don't ship a bare list. During discovery,
   walk the user through `references/features.md` (player profiles & claims,
   nationalities, packs/bonuses, roulette, time machine/position history,

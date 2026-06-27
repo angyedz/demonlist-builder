@@ -9,13 +9,25 @@ says "you decide", propose 2–3 concrete options and let them pick.
 Whenever the user is unsure, pull real options from ui-ux-pro-max:
 `python3 references/design/ui-ux-pro-max/scripts/search.py "<query>" --design-system`
 
-## 0. Aesthetic direction (taste-skill)
+## 0. Aesthetic direction + STYLE SKILL (do this first)
 - What feeling should the site give (e.g. competitive/esports, brutalist,
   retro-arcade, clean editorial, dark "hacker", playful)? Give 2–3 reference
   sites or screenshots.
+- **Pick the style skill** (see `design-system.md` Step 2). Present the options
+  and recommend one, then commit to it:
+  - `industrial-brutalist-ui` (brutalist-skill) — raw tactical/CRT or Swiss-print,
+    huge type, mono data, hazard-red. Strong default for a hardcore GD list.
+  - `high-end-visual-design` (soft-skill) — premium agency: OLED dark,
+    double-bezel cards, spring motion, Awwwards polish.
+  - `minimalist-ui` (minimalist-skill) — clean editorial, warm monochrome,
+    flat bento, muted pastels.
+  Confirm which one BEFORE asking the rest — it changes every later answer.
+- Do they want a logo / brand kit? If yes, run `brandkit` first.
 - Dark mode, light mode, or both? Which is default?
 - Dials: DESIGN_VARIANCE / MOTION_INTENSITY / VISUAL_DENSITY — propose a baseline
-  (8/6/4) and confirm per-surface adjustments.
+  from the chosen style skill and confirm per-surface adjustments.
+- Should the agent generate reference IMAGES first (image-to-code / imagegen)
+  before coding, so the build matches a real visual target?
 
 ## 1. The list (main demonlist view)
 - Cards or rows? One column, or a grid? How many items per page / infinite scroll?
